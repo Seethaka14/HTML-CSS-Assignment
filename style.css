@@ -116,7 +116,7 @@ body {
 }
 
 .image-gallery-left,
-.img-gallery-right {
+.image-gallery-right {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -213,6 +213,7 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
 
 
