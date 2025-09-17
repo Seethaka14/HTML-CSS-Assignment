@@ -87,7 +87,7 @@ body {
   border-radius: 8px;
 }
 
-.button {
+.cta-button {
   padding: 15px 30px;
   font-size: 1rem;
   background-color: #ff6f61;
@@ -99,7 +99,7 @@ body {
 }
 
 /* Special Section */
-.specialtext {
+.special-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +176,7 @@ body {
     max-width: 100%;
   }
 
-  .specialtext {
+  .special-text {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -213,6 +213,7 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
 
 
