@@ -1,0 +1,249 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6f61;
+    padding: 15px;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #fff1a1, #ffc6c6);
+    padding: 60px 50px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hero-text, .hero-image {
+    flex: 1;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    border-radius: 8px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* --- Special Text Section --- */
+.special-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to right, #fff1a1, #ffc6c6, #ffe1ff);
+    padding: 40px 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 5px;
+    margin-left: 0;
+}
+
+.image-gallery-left,
+.image-gallery-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-gallery-left {
+    margin-left: 10px;
+}
+
+.image-gallery-right {
+    margin-left: 5px;
+}
+
+.image-gallery-left img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-gallery-right img {
+    height: 420px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text-box {
+    background-color: #ff6f61;
+    color: black;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    word-wrap: break-word;
+}
+
+.text-box p:first-child {
+    margin-bottom: 20px;
+}
+
+.text-box h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.text-box p:last-child {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 1024px) {
+    .hero, .special-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .image-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .image-gallery-left, .image-gallery-right {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .image-gallery-right img {
+        height: auto;
+        width: 300px;
+    }
+
+    .text-box {
+        margin-top: 20px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        background-color: #ff6f61;
+        padding: 20px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-gallery-left, .image-gallery-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-gallery-left img, .image-gallery-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box {
+        width: 90%;
+    }
+}
