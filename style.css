@@ -20,7 +20,7 @@ body {
   flex-wrap: wrap;
 }
 
-.navlinks {
+.nav-links {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -30,7 +30,7 @@ body {
   justify-content: center;
 }
 
-.navlinks a {
+.nav-links a {
   text-decoration: none;
   color: black;
   letter-spacing: 2px;
@@ -213,6 +213,7 @@ body {
     font-size: 1.5rem;
   }
 }
+
 
 
 
